@@ -1,0 +1,109 @@
+.customizer-panel {
+    margin-top: 2rem;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+    padding: 2rem;
+}
+
+.customizer-title {
+    font-size: 1.75rem;
+    margin: 0 0 0.5rem;
+}
+
+.customizer-subtitle {
+    margin: 0 0 1.5rem;
+    color: #52606d;
+}
+
+.customizer-viewer {
+    width: 100%;
+    height: 420px;
+    background: radial-gradient(circle at 30% 30%, rgba(46, 90, 172, 0.12), rgba(17, 24, 39, 0.04));
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+#three-d-preview {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.customizer-controls {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.control-group {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.control-group legend {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.swatch-grid {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+.swatch {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #f1f5f9;
+    border-radius: 999px;
+    padding: 0.35rem 0.85rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.swatch:hover,
+.swatch:focus-within {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+}
+
+.swatch input[type="radio"] {
+    accent-color: #2e5aac;
+}
+
+#three-d-engraving {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #cbd2d9;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+}
+
+.customizer-submit {
+    justify-self: start;
+    border-radius: 999px;
+    padding: 0.75rem 1.75rem;
+    background: #2e5aac;
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.customizer-submit:hover,
+.customizer-submit:focus {
+    background: #1d3f8f;
+}
+
+@media (max-width: 768px) {
+    .customizer-viewer {
+        height: 360px;
+    }
+}
